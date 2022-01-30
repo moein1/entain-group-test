@@ -36,7 +36,6 @@ const mutations = {
       if (!state.raceList.find((raceItem) => raceItem.race_id === race.race_id))
         state.raceList.push(race);
     }
-    console.log("race list ", state.raceList);
   },
   [types.UPDATE_SHOW_LIST]: (state, payload = {}) => {
     let currenttimePlustMin = moment().add(-1, "minutes").unix();
